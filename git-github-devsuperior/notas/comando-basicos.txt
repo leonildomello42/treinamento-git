@@ -1,0 +1,7 @@
+versao:
+git --version
+
+Configurando Identificacao:
+
+git config --global user.name "lmello"
+git config --global user.email "leonildo.mello@gmail.com"

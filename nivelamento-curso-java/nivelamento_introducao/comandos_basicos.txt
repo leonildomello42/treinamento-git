@@ -1,0 +1,77 @@
+###Configuracao de identificacao:
+
+-- git config --global user.name "seu nome"
+-- git config --global user.email "seu email"
+-- git config --list
+
+
+###Configurar chave SSH:
+
+-- Gerar uma chave SSH no computador
+-- Cadastrar chave no Github
+
+
+### Comandos iniciais:
+
+-- git config --global init.defaultBranch "name"
+-- git init
+-- git add .
+-- git commit -m "Mensagem explicativa"
+-- git branch -M main
+-- git remote add origin git@github.com:seuusuario/seurepositorio.git
+-- git push -u origin main
+
+
+### Status do projeto
+
+-- git status (mostra os arquivos trabalhados, antes do commit)
+
+
+### Clonando um repositorio, enviando mudanças:
+
+-- git clone git@github.com:seuusuario/seurepositorio.git
+-- git add .
+-- git commit -m "Mensagem explicativa"
+-- git push
+
+
+### Commits:
+
+-- git log (exibe historico de commits)
+-- git log --oneline
+-- git diff arquivo.txt (mostra as alteracoes)
+
+
+### checkout(Permite modificar temporariamente os arquivos do projeto ao estado de um dado commit
+ou branch):
+
+-- git checkout main
+-- git checkout codigo_commit
+-- git checkout HEAD~1 (penúltimo commit)
+-- git checkout HEAD~2 (antepenúltimo commit)
+
+# antes de fazer o checkout para voltar para HEAD, certifique-se de que não
+#haja mudanças nos arquivos. Se você acidentalmente mudou alguma coisa, desfaça as
+#modificações usando:
+
+-- git reset
+-- git clean -df
+-- git checkout -- .
+
+
+### Remover arquivos da area do stage:
+
+-- git status
+-- git reset (desfaz o add .)
+
+
+### Desfazer ultimo commit - sem desfazer as modificacoes:
+
+-- git reset --soft HEAD~1
+
+
+### Deletar commits:
+
+-- git reset --hard HEAD~1 (codigo do commit)
+-- git reset --hard HEAD~1 ou (codigo do commit)
+
