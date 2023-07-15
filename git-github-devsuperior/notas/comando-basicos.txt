@@ -1,7 +1,22 @@
-versao:
+-versao:
+
 git --version
 
-Configurando Identificacao:
+-Configurando Identificacao:
 
 git config --global user.name "lmello"
 git config --global user.email "leonildo.mello@gmail.com"
+git config --list
+
+-configurar chave ssh
+github ssh
+
+Salvar primeira versão de um projeto:
+
+git init
+git add .
+git status
+git commit -m "mensagem explicativa"
+git branch -M main
+git remote add origin <repo>
+git push -u origin main
